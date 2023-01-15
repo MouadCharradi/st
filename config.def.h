@@ -93,27 +93,39 @@ char *termname = "st-256color";
  */
 unsigned int tabspaces = 8;
 
-/* Terminal colors (16 first used in escape sequence) */
+/* Terminal colors (16 first used in escape sequence)
+ * Base16 Gruvbox dark, hard scheme by Dawid Kurek (dawikur@gmail.com), morhetz (https://github.com/morhetz/gruvbox)
+ */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	[0] = "#282828", /* hard contrast: #1d2021 / soft contrast: #32302f */
-	[1] = "#cc241d", /* red     */
-	[2] = "#98971a", /* green   */
-	[3] = "#d79921", /* yellow  */
-	[4] = "#458588", /* blue    */
-	[5] = "#b16286", /* magenta */
-	[6] = "#689d6a", /* cyan    */
-	[7] = "#a89984", /* white   */
+	[0] = "#1d2021", /* base00 */
+	[1] = "#fb4934", /* base08 */
+	[2] = "#b8bb26", /* base0B */
+	[3] = "#fabd2f", /* base0A */
+	[4] = "#83a598", /* base0D */
+	[5] = "#d3869b", /* base0E */
+	[6] = "#8ec07c", /* base0C */
+	[7] = "#d5c4a1", /* base05 */
 
 	/* 8 bright colors */
-	[8]  = "#928374", /* black   */
-	[9]  = "#fb4934", /* red     */
-	[10] = "#b8bb26", /* green   */
-	[11] = "#fabd2f", /* yellow  */
-	[12] = "#83a598", /* blue    */
-	[13] = "#d3869b", /* magenta */
-	[14] = "#8ec07c", /* cyan    */
-	[15] = "#ebdbb2", /* white   */
+	[8] = "#665c54", /* base03 */
+	[9] = "#fb4934", /* base08 */
+	[10] = "#b8bb26", /* base0B */
+	[11] = "#fabd2f", /* base0A */
+	[12] = "#83a598", /* base0D */
+	[13] = "#d3869b", /* base0E */
+	[14] = "#8ec07c", /* base0C */
+	[15] = "#fbf1c7", /* base0F */
+
+	/* extra base16 colors */
+	[16] = "#fe8019", /* base09 */
+	[17] = "#d65d0e", /* base0F */
+	[18] = "#3c3836", /* base01 */
+	[19] = "#504945", /* base02 */
+	[20] = "#bdae93", /* base04 */
+	[21] = "#ebdbb2", /* base06 */
+
+	[255] = 0,
 };
 
 
